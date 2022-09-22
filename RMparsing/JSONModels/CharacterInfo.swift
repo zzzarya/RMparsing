@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct Results: Decodable {
+struct Character: Decodable {
     let name: String?
     let image: String?
 }
 
+struct Results: Decodable {
+    let results: [Character]
+}
